@@ -1,15 +1,19 @@
 <div class="row">
   <div class="col-6">
+    <h1>New Burgers</h1>
     {{#each burger}}
       {{#unless devoured}}
-        <div class="btn-group">
-          <div>{{burger_name}}</div>
-          <button data-id="{{id}}" class="btn btn-success ml-2 devour-button">Devour</button>
+        <div class="burgers ml-3">
+          <span>{{burger_name}}</span>
+          <div class="btn-group">
+            <button data-id="{{id}}" class="btn btn-success ml-2 devour-button">Devour</button>
+          </div>
         </div>
       {{/unless}}
     {{/each}}
   </div>
   <div class="col-6">
+    <h1>Devoured Burgers</h1>
     {{#each burger}}
       {{#if devoured}}
         <div>{{burger_name}}</div>
