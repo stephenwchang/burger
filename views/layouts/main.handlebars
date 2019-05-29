@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+
     <meta charset="utf-8">
     <title>Burger</title>
 </head>
 <body>
+<img src="https://www.seriouseats.com/recipes/images/2015/07/20150728-homemade-whopper-food-lab-35.jpg" id="burger-icon" class="img-thumbnail">
 
     {{{body}}}
 
+<div class="input-group mb-3">
+  <input id="input" type="text" class="form-control" placeholder="Recipient's username" aria-label="Enter a burger" aria-describedby="button-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" id="button">Button</button>
+  </div>
+</div>
+<a href="/api/burgers">API</a>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
 </body>
 </html>

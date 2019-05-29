@@ -8,10 +8,15 @@ const PORT = process.env.PORT || 8080;
 app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 
-app.engine('handlebars', exphbs());
+// public directory
+app.use(express.static(path.join(__dirname, '/public')));
+
+app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
-
+// Routes
+require('./routes/html-routes')(app);
+require('./routes/api-routes')(app);
 
 
 //server listen
