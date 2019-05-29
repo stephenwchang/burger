@@ -2,7 +2,7 @@ const Sequelize = require('sequelize');
 
 
 
-const sequelize = new Sequelize('buheroku_7cdff1edc84e8fd', 'b00b858caa3026', 'c63bacb4', {
+const sequelize = new Sequelize('heroku_7cdff1edc84e8fd', 'b00b858caa3026', 'c63bacb4', {
   host: 'us-cdbr-iron-east-02.cleardb.net',
   dialect: 'mysql',
   pool: {
