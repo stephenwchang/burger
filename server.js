@@ -10,7 +10,6 @@ app.use(express.json());
 
 // public directory
 app.use(express.static(path.join(__dirname, '/public')));
-app.use(express.static(path.join(__dirname, "client", "build")))
 
 
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
